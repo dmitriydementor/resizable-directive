@@ -1,0 +1,70 @@
+.main-container {
+  display: flex;
+  height: 100vh;
+
+  .nav {
+    border: 2px solid #cc5809;
+    background-color: #d9c986;
+    padding: 20px;
+    width: 260px;
+    max-width: 350px;
+    min-width: 190px;
+  }
+
+  .content {
+    border: 2px solid #61b345;
+    background-color: rgba(#868ad9, 0.41);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    #first,
+    #second,
+    #third {
+      border: 3px solid #40b957;
+      overflow: scroll;
+      margin: 10px;
+    }
+
+    #first {
+      flex-basis: 50vh;
+      display: flex;
+
+      .phonebook {
+        flex-basis: 60%;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+
+        &__main {
+          flex-basis: 50%;
+        }
+
+        &__selected {
+          flex-basis: 50%;
+        }
+      }
+
+      .report-info {
+        flex-basis: 60%;
+        min-width: 300px;
+      }
+    }
+
+    #second {
+      flex-basis: 40vh;
+      flex-direction: row;
+      display: flex;
+      .documents {
+        flex-basis: 70%;
+      }
+      .viewer {
+        flex-basis: 30%;
+      }
+    }
+
+    #third {
+      flex-basis: 10vh;
+    }
+  }
+}
